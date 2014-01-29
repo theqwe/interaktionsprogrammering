@@ -11,19 +11,20 @@ public class MainView extends JPanel {
 	
 	private static final long serialVersionUID = 1L;
 	
+	// The components of our view
 	JLabel label = new JLabel();
 	JButton plusButton = new JButton();
 	JButton minusButton = new JButton();
-	DinnerModel model;
 	
-	public MainView(DinnerModel model){
+	public MainView(){
 
-		this.model = model;
-		label.setText("Number of dishes in the model:" + model.getDishes().size());
+		label.setText("Hello world");
+		
+		// Add label to the view
 		this.add(label);
 		
 		
-		//here you set other layout elements
+		// Setup the rest of the view layout
 	}
 	
 }
